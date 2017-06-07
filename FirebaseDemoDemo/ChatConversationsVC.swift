@@ -36,7 +36,6 @@ class ChatConversationsVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.scrollToBottomMessage() //this func should be call after message loaded from firebase.
     }
     
     func setUI() {
@@ -111,10 +110,6 @@ class ChatConversationsVC: UIViewController {
             let groupPath = firDb.child("Chat/\(groupId)")
             groupPath.childByAutoId().setValue(message.json)
             
-//            self.messages.append(message)
-//            let indexPath = IndexPath(row: messages.count - 1, section: 0)
-//            self.tblChat.insertRows(at: [indexPath], with: .none)
-//            self.scrollToBottomMessage()
             txtMessage.text = ""
         }
     }
@@ -171,9 +166,10 @@ extension ChatConversationsVC: UITableViewDataSource, UITableViewDelegate  {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-       let msgText = self.messages[indexPath.row].text
+        let msgText = self.messages[indexPath.row].text
+       
+        //Create a label just for calculate size of message.
         let msgLbl = UILabel()
-        
         msgLbl.frame = CGRect(x: 0, y: 0, width: orientation == 0 ? 220 : 300, height: 0)
         msgLbl.font = msgLblFont!
         msgLbl.text = msgText
@@ -186,10 +182,10 @@ extension ChatConversationsVC: UITableViewDataSource, UITableViewDelegate  {
         
     }
     
-    func scrollToBottomMessage() {
+    func scrollToBottomMessage(animated: Bool = true) {
         if messages.count == 0 { return }
         let bottomMessageIndex = IndexPath(row: tblChat.numberOfRows(inSection: 0) - 1, section: 0)
-        tblChat.scrollToRow(at: bottomMessageIndex, at: .bottom, animated: true)
+        tblChat.scrollToRow(at: bottomMessageIndex, at: .bottom, animated: animated)
     }
 }
 

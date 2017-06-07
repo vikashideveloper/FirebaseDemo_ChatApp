@@ -61,15 +61,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
         print(tokenString)
         FIRInstanceID.instanceID().setAPNSToken(deviceToken, type: FIRInstanceIDAPNSTokenType.sandbox)
-
+        FIRInstanceID.instanceID().token()
         if loggedUser != nil {
             let dbRef = FIRDatabase.database().reference()
             
             //define the path of Users list in firebase database.
             let usersPath =  dbRef.child("Users")
-            
+           let firToken = FIRInstanceID.instanceID().token()!
+
             let userId = loggedUser.firAuthID
-            usersPath.child(userId).child("DeviceToken").setValue(tokenString)
+            usersPath.child(userId).child("DeviceToken").setValue(firToken)
         }
 
         

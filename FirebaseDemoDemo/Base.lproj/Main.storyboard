@@ -445,7 +445,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iez-lw-9lB">
-                                            <rect key="frame" x="208.5" y="33" width="250" height="245"/>
+                                            <rect key="frame" x="62.5" y="33" width="250" height="245"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p1q-WH-f9D">
                                                     <rect key="frame" x="26" y="49" width="198" height="30"/>
@@ -1528,7 +1528,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="jBa-xI-gXI" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8jO-hS-nTu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="8jO-hS-nTu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1603,7 +1603,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNE-6y-EaW">
-                                            <rect key="frame" x="208.5" y="33" width="250" height="200"/>
+                                            <rect key="frame" x="62.5" y="33" width="250" height="200"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bC2-3j-WBJ">
                                                     <rect key="frame" x="26" y="49" width="198" height="30"/>
@@ -2218,7 +2218,7 @@
                                                                             </constraint>
                                                                         </constraints>
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                         <variation key="default">
                                                                             <mask key="constraints">
@@ -2238,7 +2238,7 @@
                                                                         </variation>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.35004951584507044" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="backgroundColor" red="0.8007315993309021" green="0.63334280252456665" blue="0.13625746965408325" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstItem="E9d-NL-rdX" firstAttribute="top" secondItem="l6i-YC-Em1" secondAttribute="top" constant="6" id="1ru-0R-erH"/>
                                                                     <constraint firstAttribute="trailing" secondItem="E9d-NL-rdX" secondAttribute="trailing" constant="10" id="8rb-yt-uyr"/>

@@ -30,6 +30,9 @@ PODS:
   - Firebase/Messaging (3.17.0):
     - Firebase/Core
     - FirebaseMessaging (= 1.2.3)
+  - Firebase/Storage (3.17.0):
+    - Firebase/Core
+    - FirebaseStorage (= 1.1.0)
   - FirebaseAnalytics (3.9.0):
     - FirebaseCore (~> 3.6)
     - FirebaseInstanceID (~> 1.0)
@@ -49,6 +52,9 @@ PODS:
     - FirebaseInstanceID (~> 1.0)
     - GoogleToolboxForMac/Logger (~> 2.1)
     - Protobuf (~> 3.1)
+  - FirebaseStorage (1.1.0):
+    - FirebaseAnalytics (~> 3.7)
+    - GTMSessionFetcher/Core (~> 1.1)
   - GoogleSignIn (4.0.2):
     - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
     - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
@@ -85,6 +91,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Messaging
+  - Firebase/Storage
   - GoogleSignIn
   - TwitterKit
 
@@ -102,6 +109,7 @@ SPEC CHECKSUMS:
   FirebaseDatabase: 05c96d7b43a7368dc91c07791adb49683e1738d1
   FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
   FirebaseMessaging: 753d05a925e9eb8eadd09a0ffc9b808578b72fac
+  FirebaseStorage: a5c55b23741a49a72af8f30f95b3bb5ddbeda12d
   GoogleSignIn: d7ad83f13480e1f30453471d00d19b5293ac46af
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
@@ -110,6 +118,6 @@ SPEC CHECKSUMS:
   TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
   TwitterKit: 3b6044a7320340326a4098f3e37aa1dbaeb94942
 
-PODFILE CHECKSUM: e0eedb0f4ca97f8bd498dcbbc83dbe516810afb0
+PODFILE CHECKSUM: b187b5f75e1fec64214a543965195abd90f011f3
 
 COCOAPODS: 1.2.0

@@ -12,5 +12,5 @@ target 'FirebaseDemoDemo' do
  pod 'GoogleSignIn'
  pod 'FacebookLogin'
  pod 'TwitterKit'
-
+ pod 'Firebase/Storage'
 end
